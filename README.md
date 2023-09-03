@@ -1,5 +1,8 @@
 # Pipeline-ENEM2020-DATAPROC-TERRAFORM
 
+## Toda infraestrutura e instalação do Spark e Airflow é realizada via Terraform.
+## A injestão e análise dos dados é realizada via dag Airflow.
+
 1. Criar um cluster via TERRAFORM no Google DATAPROC para a realização da análise utilizando um cluster baseado em nuvem
 para comportar o volume de dados trabalhado.
 
@@ -9,8 +12,6 @@ para comportar o volume de dados trabalhado.
 <https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem>
 
 Os dados devem ser ingeridos de maneira automatizada na zona raw ou zona crua ou zona bronze do seu Data Lake.
-## Toda infraestrutura e instalação do Spark e Airflow é realizada via Terraform.
-## A injestão e análise dos dados é realizada via dag Airflow.
 
 5. Utilizar o SparkOperator no Kubernetes para transformar os dados no formato parquet e escrevê-los na zona staging ou zona silver do seu data
 lake.
